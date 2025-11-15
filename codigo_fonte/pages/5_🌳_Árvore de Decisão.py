@@ -63,4 +63,3 @@ sessao_grafico_correlacao.dataframe(
     data=modelo.colunas_correlacao()
 )
 
-print("teste")

@@ -30,4 +30,5 @@ def grafico_correlacao():
     plt.title("Correlação das variáveis númericas")
     return fig
 
-    
+def grafico_matrix_confusao():
+    pass
