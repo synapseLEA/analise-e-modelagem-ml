@@ -40,7 +40,17 @@ A página do Streamlit será organizada em etapas sequenciais para fornecer uma 
     * **Objetivo:** Apresentar graficamente a **Matriz de Confusão** para verificar, de forma detalhada, o número exato de **Acertos** (VP e VN) e **Erros** (FP e FN) cometidos pelo modelo no conjunto de teste.
 5.  **Relatório de Métricas e Interpretação dos Resultados**
     * **Objetivo:** Apresentar e discutir os valores calculados para **Acurácia, Precisão, Recall e F1-Score**. O foco é entender como cada métrica se **modela ao problema** e validar o desempenho geral do modelo.
+---
 """)
+
+quantidadeLinhas = st.number_input(
+    label='Selecione a quantidade de linhas que deseja visualizar: ',
+    min_value=5,
+    max_value=12
+)
+st.dataframe(
+    data=modelo.visualizar_dataframe(quantidadeLinhas)
+)
 
 sessao_grafico_correlacao = st.container(
     border=True
@@ -48,3 +58,9 @@ sessao_grafico_correlacao = st.container(
 sessao_grafico_correlacao.pyplot(
     fig = modelo.grafico_correlacao()
 )
+
+sessao_grafico_correlacao.dataframe(
+    data=modelo.colunas_correlacao()
+)
+
+print("teste")
