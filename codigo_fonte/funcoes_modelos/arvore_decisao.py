@@ -14,4 +14,5 @@ def grafico_correlacao():
     )
     plt.title("Correlação das variáveis númericas")
     return fig
+
     
