@@ -46,7 +46,7 @@ A página do Streamlit será organizada em etapas sequenciais para fornecer uma 
 quantidadeLinhas = st.number_input(
     label='Selecione a quantidade de linhas que deseja visualizar: ',
     min_value=5,
-    max_value=10
+    max_value=12
 )
 st.dataframe(
     data=modelo.visualizar_dataframe(quantidadeLinhas)
