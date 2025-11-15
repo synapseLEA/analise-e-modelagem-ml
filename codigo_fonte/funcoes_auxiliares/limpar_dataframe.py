@@ -8,7 +8,7 @@ def dataframeLimpo():
     caminho_csv = os.path.join(
         diretorio_raiz,
         '..',
-        'banco-dados',
+        'banco_dados',
         'bruto',
         'diabetes_dataset.csv'
     )

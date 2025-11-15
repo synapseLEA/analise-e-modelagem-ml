@@ -1,4 +1,4 @@
-from ..funcoes_auxiliares.limpar_dataframe import dataframeLimpo
+from funcoes_auxiliares.limpar_dataframe import dataframeLimpo
 import matplotlib.pyplot as plt
 import seaborn as sns
 df = dataframeLimpo()
