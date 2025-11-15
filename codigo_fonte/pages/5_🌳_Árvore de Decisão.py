@@ -63,3 +63,7 @@ sessao_grafico_correlacao.dataframe(
     data=modelo.colunas_correlacao()
 )
 
+sessao_grafico_correlacao.dataframe(
+    data=modelo.variaveis_correlacao()
+)
+
