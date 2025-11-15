@@ -11,6 +11,11 @@ def colunas_correlacao():
     correlacao = df.corr()
     return correlacao
 
+def variaveis_correlacao():
+    correlacao = df.corr()
+    variaveisMelhorCorrelacao = correlacao[abs(correlacao.values) > 0.19]
+    return variaveisMelhorCorrelacao
+
 def grafico_correlacao():
     fig, axs = plt.subplots(
         figsize=(21, 12)
